@@ -33,12 +33,20 @@ public class CajeroView
     public void mostrarMenuPrincipal(String titular)
     {
        System.out.println("==========================================");
-       System.out.println("Bienvenido " + titular);
+       System.out.println("   ___  _                       _    __     _ \n" +
+"  / _ )(_)__ ___ _  _____ ___  (_)__/ /__  (_)\n" +
+" / _  / / -_) _ \\ |/ / -_) _ \\/ / _  / _ \\_   \n" +
+"/____/_/\\__/_//_/___/\\__/_//_/_/\\_,_/\\___(_)  \n" +
+"                                               " + titular);
        System.out.println("==========================================");
        System.out.println("1. Consultar Saldo");
        System.out.println("2. Retirar");
        System.out.println("3. Depositar");
-       //introducir las demas opciones de tarea
+       System.out.println("4. Cambiar NIP");
+       System.out.println("5. Salir");
+       System.out.println("==========================================");
+       
+       //SOLO METI LA OPCION DE CAMBIAR NIP
     }
     public int leerOpcion()
     {
