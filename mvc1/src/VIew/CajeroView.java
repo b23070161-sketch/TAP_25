@@ -88,8 +88,9 @@ public class CajeroView
     //tarea personalizar mensajes de error y de exito
     //tarea mateodo para salir cerrar el scanner
 
-    public void MostrarBienvenida() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public void MostrarBienvenida() 
+    {
+        System.out.println("Bienvenido");
     }
     
 }

@@ -19,7 +19,7 @@ public class CajeroModel
         
         cuentas.put("4567", new Cuenta("4567", "4567", 8000, "Maria Magdalena"));
         
-        cuentas.put("0000", new Cuenta("0000", "0000",1987, "Omar Chaparro"));
+        cuentas.put("0000", new Cuenta("0000", "0000", 1987, "Omar Chaparro"));
     }
     
     public boolean autenticar(String numeroCuenta, String pin)
