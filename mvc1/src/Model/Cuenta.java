@@ -3,9 +3,9 @@ package Model;
 public class Cuenta 
 {
     private String numeroCuenta, pin, titular;
-    private double saldo, saldoInicial;
+    private double saldo;
     
-    public Cuenta(String numeroCuenta, String pin, int par, String titular)
+    public Cuenta(String numeroCuenta, String pin, double saldoInicial, String titular)
     {
         this.numeroCuenta = numeroCuenta;
         this.pin = pin;

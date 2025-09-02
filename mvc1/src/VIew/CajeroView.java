@@ -66,12 +66,12 @@ public class CajeroView
 "  / __/__ _/ /__/ /__    ___ _____/ /___ _____ _/ (_)\n" +
 " _\\ \\/ _ `/ / _  / _ \\  / _ `/ __/ __/ // / _ `/ /   \n" +
 "/___/\\_,_/_/\\_,_/\\___/  \\_,_/\\__/\\__/\\_,_/\\_,_/_(_)  \n" +
-"                                                      " + saldo);
+"                                                       $" + saldo);
         System.out.println("================================");
     }
     public double solicitarCantidad(String operacion)
     {
-        System.out.println("Ingresa la cantidad a" + operacion);
+        System.out.println("Ingresa la cantidad a" + operacion + ": ");
         try{
             return Double.parseDouble(scanner.nextLine());
         }
@@ -88,9 +88,5 @@ public class CajeroView
     //tarea personalizar mensajes de error y de exito
     //tarea mateodo para salir cerrar el scanner
 
-    public void MostrarBienvenida() 
-    {
-        System.out.println("Bienvenido");
-    }
     
 }

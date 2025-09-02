@@ -2,14 +2,12 @@ package Controller;
 
 import Model.CajeroModel;
 import VIew.CajeroView;
-import Model.Cuenta;
 
 public class CajeroController 
 {
-    private CajeroModel Model;
+    private CajeroModel model;
     private CajeroView view;
     private boolean sistemaActivo;
-    private final CajeroModel model;
     
     public CajeroController(CajeroModel model, CajeroView view)
     {
@@ -19,7 +17,7 @@ public class CajeroController
     }
     public void IniciarSistema()
     {
-        view.MostrarBienvenida();
+        view.mostrarBienvenida();
         while(sistemaActivo)
         {
             if(autenticarUsuario())
@@ -35,8 +33,9 @@ public class CajeroController
     }
     private boolean autenticarUsuario()
     {
-        
-        return false;
+        String numeroCuenta = view.solicitarNumeroCuenta();
+        String pin = view.solicitarPin();
+        return model.autenticar(numeroCuenta, pin);
         
     }
     private void ejecutarMenuPrincipal()
@@ -52,9 +51,10 @@ public class CajeroController
                     consultarSaldo();
                     break;
                 case 2:
-                    realizarRetiro();
+                    this.realizarRetiro();
                     break;
                 case 3:
+                    realizarDeposito();
                     break;
                 case 9:
                     break;

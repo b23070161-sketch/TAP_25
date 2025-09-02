@@ -15,7 +15,7 @@ public class CajeroModel
     }
     private void inicializarCuentas()
     {
-        cuentas.put("1234", new Cuenta("1234", "1234", 5000, "Juan Perez"));
+        cuentas.put("1234", new Cuenta("1234", "1234", 50000.80, "Juan N."));
         
         cuentas.put("4567", new Cuenta("4567", "4567", 8000, "Maria Magdalena"));
         
