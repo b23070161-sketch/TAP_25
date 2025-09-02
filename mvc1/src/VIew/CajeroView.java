@@ -37,7 +37,8 @@ public class CajeroView
 "  / _ )(_)__ ___ _  _____ ___  (_)__/ /__  (_)\n" +
 " / _  / / -_) _ \\ |/ / -_) _ \\/ / _  / _ \\_   \n" +
 "/____/_/\\__/_//_/___/\\__/_//_/_/\\_,_/\\___(_)  \n" +
-"                                               " + titular);
+"                                                "
+               + "" + titular);
        System.out.println("==========================================");
        System.out.println("1. Consultar Saldo");
        System.out.println("2. Retirar");
@@ -61,7 +62,11 @@ public class CajeroView
     public void mostrarSaldo(double saldo)
     {
         System.out.println("================================");
-        System.out.println("Tu saldo actual es: " + saldo);
+        System.out.println("   ____     __   __                __            ___ \n" +
+"  / __/__ _/ /__/ /__    ___ _____/ /___ _____ _/ (_)\n" +
+" _\\ \\/ _ `/ / _  / _ \\  / _ `/ __/ __/ // / _ `/ /   \n" +
+"/___/\\_,_/_/\\_,_/\\___/  \\_,_/\\__/\\__/\\_,_/\\_,_/_(_)  \n" +
+"                                                      " + saldo);
         System.out.println("================================");
     }
     public double solicitarCantidad(String operacion)
@@ -82,5 +87,9 @@ public class CajeroView
     
     //tarea personalizar mensajes de error y de exito
     //tarea mateodo para salir cerrar el scanner
+
+    public void MostrarBienvenida() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
 }
