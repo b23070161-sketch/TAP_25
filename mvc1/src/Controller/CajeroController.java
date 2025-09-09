@@ -56,6 +56,8 @@ public class CajeroController
                 case 3:
                     realizarDeposito();
                     break;
+                case 5:
+                    break;
                 case 9:
                     break;
                 default:

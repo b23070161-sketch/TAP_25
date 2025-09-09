@@ -21,7 +21,8 @@ public class Cuenta
         return pin;
     }
 
-    public String getTitular() {
+    public String getTitular()
+    {
         return titular;
     }
 

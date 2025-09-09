@@ -11,14 +11,14 @@ public class CajeroView
     }
     public void mostrarBienvenida()
     {
-        System.out.println("==========================================");
+        System.out.println("======================================================================================================");
         System.out.println("    ____  _                            _     __               __                _               \n" +
 "   / __ )(_)__  ____ _   _____  ____  (_)___/ /___     ____ _/ /  _________ _  (_)__  _________ \n" +
 "  / __  / / _ \\/ __ \\ | / / _ \\/ __ \\/ / __  / __ \\   / __ `/ /  / ___/ __ `/ / / _ \\/ ___/ __ \\\n" +
 " / /_/ / /  __/ / / / |/ /  __/ / / / / /_/ / /_/ /  / /_/ / /  / /__/ /_/ / / /  __/ /  / /_/ /\n" +
 "/_____/_/\\___/_/ /_/|___/\\___/_/ /_/_/\\__,_/\\____/   \\__,_/_/   \\___/\\__,_/_/ /\\___/_/   \\____/ \n" +
 "                                                                         /___/                  ");
-        System.out.println("==========================================");
+        System.out.println("======================================================================================================");
     }
     public String solicitarNumeroCuenta()
     {
@@ -32,14 +32,14 @@ public class CajeroView
     }
     public void mostrarMenuPrincipal(String titular)
     {
-       System.out.println("==========================================");
+       System.out.println("======================================================================================================");
        System.out.println("   ___  _                       _    __     _ \n" +
 "  / _ )(_)__ ___ _  _____ ___  (_)__/ /__  (_)\n" +
 " / _  / / -_) _ \\ |/ / -_) _ \\/ / _  / _ \\_   \n" +
 "/____/_/\\__/_//_/___/\\__/_//_/_/\\_,_/\\___(_)  \n" +
 "                                                "
                + "" + titular);
-       System.out.println("==========================================");
+       System.out.println("======================================================================================================");
        System.out.println("1. Consultar Saldo");
        System.out.println("2. Retirar");
        System.out.println("3. Depositar");
@@ -61,13 +61,13 @@ public class CajeroView
     }
     public void mostrarSaldo(double saldo)
     {
-        System.out.println("================================");
+        System.out.println("===========================================================");
         System.out.println("   ____     __   __                __            ___ \n" +
 "  / __/__ _/ /__/ /__    ___ _____/ /___ _____ _/ (_)\n" +
 " _\\ \\/ _ `/ / _  / _ \\  / _ `/ __/ __/ // / _ `/ /   \n" +
 "/___/\\_,_/_/\\_,_/\\___/  \\_,_/\\__/\\__/\\_,_/\\_,_/_(_)  \n" +
 "                                                       $" + saldo);
-        System.out.println("================================");
+        System.out.println("===========================================================");
     }
     public double solicitarCantidad(String operacion)
     {
@@ -82,7 +82,7 @@ public class CajeroView
     }
     public void mostrarMensaje(String mensaje)
     {
-        System.out.print("====== " + mensaje);
+        System.out.print("====== " + mensaje + " ======\n");
     }
     
     //tarea personalizar mensajes de error y de exito
