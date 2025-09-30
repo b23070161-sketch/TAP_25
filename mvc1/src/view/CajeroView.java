@@ -1,4 +1,4 @@
-package VIew;
+package view;
 import java.util.Scanner;
 
 public class CajeroView 
@@ -43,7 +43,7 @@ public class CajeroView
        System.out.println("1. Consultar Saldo");
        System.out.println("2. Retirar");
        System.out.println("3. Depositar");
-       System.out.println("4. Cambiar NIP");
+       System.out.println("4. Transferencia");
        System.out.println("5. Salir");
        System.out.println("==========================================");
        
@@ -84,9 +84,9 @@ public class CajeroView
     {
         System.out.print("====== " + mensaje + " ======\n");
     }
-    
-    //tarea personalizar mensajes de error y de exito
-    //tarea mateodo para salir cerrar el scanner
 
-    
+    public String solicitarNumeroCuentaDestino() {
+        System.out.print("Ingrese el número de cuenta destino: ");
+        return scanner.nextLine();
+    }
 }

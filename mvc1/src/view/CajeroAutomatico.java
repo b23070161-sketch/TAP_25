@@ -1,7 +1,7 @@
-package VIew;
+package view;
 
-import Controller.CajeroController;
-import Model.CajeroModel;
+import controller.CajeroController;
+import model.CajeroModel;
 
 public class CajeroAutomatico
 {

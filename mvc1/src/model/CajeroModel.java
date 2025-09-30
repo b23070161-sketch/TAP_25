@@ -1,4 +1,4 @@
-package Model;
+package model;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -56,5 +56,22 @@ public class CajeroModel
     public boolean cuentaExistente(String numeroCuenta)
     {
         return cuentas.containsKey(numeroCuenta);
+    }
+
+    public boolean realizarTransferencia(String cuentaDestino, double monto) {
+        if (cuentaActual != null && monto > 0 && cuentaActual.getSaldo() >= monto) {
+            Cuenta destino = buscarCuentaPorNumero(cuentaDestino);
+
+            if (destino != null && !destino.getNumeroCuenta().equals(cuentaActual.getNumeroCuenta())) {
+                cuentaActual.retirar(monto);
+                destino.depositar(monto);
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public Cuenta buscarCuentaPorNumero(String numeroCuenta) {
+        return cuentas.get(numeroCuenta); // devuelve null si no existe
     }
 }
