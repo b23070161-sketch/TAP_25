@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.demofx.RegistroController"
+      alignment="CENTER" spacing="15" style="-fx-padding: 20; -fx-font-family: 'Arial';">
+
+    <Label text="Formulario de Registro" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+
+    <TextField fx:id="nombreField" promptText="Introduce tu nombre"/>
+
+    <Label text="Fecha de Nacimiento"/>
+    <HBox spacing="10" alignment="CENTER">
+        <ComboBox fx:id="diaBox" promptText="Día"/>
+        <ComboBox fx:id="mesBox" promptText="Mes"/>
+        <ComboBox fx:id="anioBox" promptText="Año"/>
+    </HBox>
+
+    <Button text="Finalizar Registro" onAction="#finalizarRegistro"/>
+</VBox>
